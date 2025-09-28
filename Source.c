@@ -9,13 +9,13 @@ static int task1()
 	double d = 5e-12;
 	printf("%c %d %f %le\n", c, i, f, d);
 
-	puts("Введите символ:");
+	puts("Г‚ГўГҐГ¤ГЁГІГҐ Г±ГЁГ¬ГўГ®Г«:");
 	scanf("%c", &c);
-	puts("Введите целое число:");
+	puts("Г‚ГўГҐГ¤ГЁГІГҐ Г¶ГҐГ«Г®ГҐ Г·ГЁГ±Г«Г®:");
 	scanf("%d", &i);
-	puts("Введите дробное число (float):");
+	puts("Г‚ГўГҐГ¤ГЁГІГҐ Г¤Г°Г®ГЎГ­Г®ГҐ Г·ГЁГ±Г«Г® (float):");
 	scanf("%f", &f);
-	printf("Введите дробное число (double):");
+	printf("Г‚ГўГҐГ¤ГЁГІГҐ Г¤Г°Г®ГЎГ­Г®ГҐ Г·ГЁГ±Г«Г® (double):");
 	scanf("%lg", &d);
 	printf("%c, %i, %f, %ld", c, i, f, d);
 	return 0;
@@ -61,46 +61,46 @@ int task1_a()
 	int a;
 	int b;
 	
-	puts("Введите a:");
+	puts("Г‚ГўГҐГ¤ГЁГІГҐ a:");
 	scanf("%d", &a);
-	puts("Введите b:");
+	puts("Г‚ГўГҐГ¤ГЁГІГҐ b:");
 	scanf("%d", &b);
 	
-	printf("%d, %lf целая часть = %d, дробная = %lf", (int)a/b, (long float)a/b, (int)a/b, ((long float)a/b)-((int)a/b));
+	printf("%d, %lf Г¶ГҐГ«Г Гї Г·Г Г±ГІГј = %d, Г¤Г°Г®ГЎГ­Г Гї = %lf", (int)a/b, (long float)a/b, (int)a/b, ((long float)a/b)-((int)a/b));
 }
 int task1_b()
 {
 	char a;
-	puts("Введите символ:");
+	puts("Г‚ГўГҐГ¤ГЁГІГҐ Г±ГЁГ¬ГўГ®Г«:");
 	scanf("%c", &a);
-	printf("Введен символ = %c\nДесятичный код=%d\nШестнацатеричный код= 0x%X",a,a,a);
+	printf("Г‚ГўГҐГ¤ГҐГ­ Г±ГЁГ¬ГўГ®Г« = %c\nГ„ГҐГ±ГїГІГЁГ·Г­Г»Г© ГЄГ®Г¤=%d\nГГҐГ±ГІГ­Г Г¶Г ГІГҐГ°ГЁГ·Г­Г»Г© ГЄГ®Г¤= 0x%X",a,a,a);
 
 }
 
 int task1_c()
 {
 	int i;
-	puts("Введите число:");
+	puts("Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г®:");
 	scanf("%d", &i);
-	printf("Введен число = %d\n1/i = %lf", i,(long double)1/i);
+	printf("Г‚ГўГҐГ¤ГҐГ­ Г·ГЁГ±Г«Г® = %d\n1/i = %lf", i,(long double)1/i);
 
 }
 
 int task3()
 {
-	int a;
+	int N;
 	int first;
 	int last;
 	int sum;
 
-	printf("Введите трехзначное число:\n");
-	scanf("%d", &a);
-	printf("Введено число:%d\n",a);
+	printf("Г‚ГўГҐГ¤ГЁГІГҐ ГІГ°ГҐГµГ§Г­Г Г·Г­Г®ГҐ Г·ГЁГ±Г«Г®:\n");
+	scanf("%d", &N);
+	printf("Г‚ГўГҐГ¤ГҐГ­Г® Г·ГЁГ±Г«Г®:%d\n",N);
 
-	first = a / 100;
-	last = a % 10;
-	sum = first + (a / 10 % 10) + last;
-	printf("Первое число равно: %d\nПоследнее число равно:%d\nСумма чисел равна:%d", first, last, sum);
+	first = N / 100;
+	last = N % 10;
+	sum = first + (N / 10 % 10) + last;
+	printf("ГЏГҐГ°ГўГ®ГҐ Г·ГЁГ±Г«Г® Г°Г ГўГ­Г®: %d\nГЏГ®Г±Г«ГҐГ¤Г­ГҐГҐ Г·ГЁГ±Г«Г® Г°Г ГўГ­Г®:%d\nГ‘ГіГ¬Г¬Г  Г·ГЁГ±ГҐГ« Г°Г ГўГ­Г :%d", first, last, sum);
 }
 
 int homework()
@@ -109,8 +109,9 @@ int homework()
 	int B;
 	int C;
 	int triple_strike;
-	printf("Введите 3 значения силы героев:\n");
+	printf("Г‚ГўГҐГ¤ГЁГІГҐ 3 Г§Г­Г Г·ГҐГ­ГЁГї Г±ГЁГ«Г» ГЈГҐГ°Г®ГҐГў:\n");
 	scanf("%d %d %d", &A, &B, &C);
 	triple_strike = ((A % 3 == 0) && (B % 3 == 0) && (C % 3 == 0));
-	printf("Тройной удар активирован (1 - да, 0 - нет): %d\n", triple_strike);
+	printf("Г’Г°Г®Г©Г­Г®Г© ГіГ¤Г Г° Г ГЄГІГЁГўГЁГ°Г®ГўГ Г­ (1 - Г¤Г , 0 - Г­ГҐГІ): %d\n", triple_strike);
 }
+
